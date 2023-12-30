@@ -1,5 +1,7 @@
 # Student Management System 
 
+![imnage.info](student-mgmt-snapshot.png)
+
 ## Overview
 
 This Student Management System is a Java-based application that leverages JDBC to interact with a MySQL database. The system provides essential functionalities for managing student details, including adding new students, displaying all student details, retrieving details based on roll number, and updating or deleting student information.
