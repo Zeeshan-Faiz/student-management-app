@@ -46,8 +46,6 @@ This Student Management System is a Java-based application that leverages JDBC t
 
 ```java
 // Sample code
-
-
 while(true) {
 			int flag=0;
 			menu();
