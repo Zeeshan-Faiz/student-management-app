@@ -48,8 +48,41 @@ This Student Management System is a Java-based application that leverages JDBC t
 // Sample code
 
 
-// Update student details
-sms.updateStudentDetails("2023001", "John Smith", "Electrical Engineering");
+while(true) {
+			int flag=0;
+			menu();
+			System.out.print("Please enter your choice:");
+			int choice = sc.nextInt();
+			switch(choice) {
+				case 1:
+					System.out.println("Please add the below student details:");
+					sDao.insertStudent();
+					break;
+				case 2:
+					System.out.println("Showing All Student Details:");
+					System.out.println("______________________________________________");
+					sDao.showAllStudentDetails();
+					break;
+				case 3:
+					 sDao.showStudentById();
+					break;
+				case 4:
+					sDao.deleteStudentById();
+					break;
+				case 5:
+					System.out.println("Updating Student Details:");
+					sDao.updateStudentDetails();
+					break;
+				case 6:
+					System.out.println("Thanks for using the application!!");
+					flag=1;
+					break;
+				default:
+					System.out.println("Please enter valid Operation");
+					break;
+			}
+			if(flag==1)
+				break;
+		}
 
-// Delete student
-sms.deleteStudent("2023001");
+}
